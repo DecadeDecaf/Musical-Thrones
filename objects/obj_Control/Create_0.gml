@@ -36,9 +36,9 @@ audio_master_gain(0.75)
 
 PoolA = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 PoolB = ["AT", "AH", "AW", "AM", "AN", "AD", "ME", "MY", "PI", "WE", "IF", "IT", "OH", "NO", "OW", "SO", "HI", "OR", "ON", "GO", "UP", "US"]
-PoolC = ["ART", "CAR", "EMU", "DEN", "TIN", "PIG", "HOT", "BUS", "ALT", "TAD", "END", "PRO", "SHY", "FRY", "AND", "WIT", "TOO", "YES", "SEE", "TON", "ASK", "KIT", "CAM", "BAG", "THE", "TWO", "SIX", "TEN", "MET", "ZOO", "EYE", "FUN", "BUN", "DAY"]
-PoolD = ["JAZZ", "FADE", "DARE", "SEND", "MEAN", "EACH", "WISP", "INTO", "LIME", "TOLD", "CORN", "LOUD", "SONG", "HUNT", "TUNE", "COZY", "BOIL", "OHIO", "READ", "LURE", "ITCH", "DESK", "MOON", "RING", "OPEN", "OVER", "QUIT", "EXIT", "FAST", "SLOW", "BLUE"]
-PoolE = ["SANDY", "TREND", "MIXED", "PORCH", "LUDUM", "CHAIR", "TEMPO", "IDAHO", "SOUTH", "MUSIC", "DANCE", "TREES", "IVORY", "OILED", "RUINS", "RHYME", "ARTSY", "DELAY", "ROYAL", "SHARK", "QUICK", "SMILE", "CHILD", "REACH", "HAPPY", "SUNNY", "TABLE", "SPEAK", "VOICE", "CROWN"]
+PoolC = ["ART", "CAR", "EMU", "DEN", "TIN", "PIG", "HOT", "BUS", "ALT", "TAD", "END", "PRO", "SHY", "FRY", "AND", "WIT", "TOO", "YES", "SEE", "TON", "ASK", "KIT", "CAM", "BAG", "THE", "TWO", "SIX", "TEN", "MET", "ZOO", "EYE", "FUN", "BUN", "DAY", "RED", "DOG", "AIR", "TOY"]
+PoolD = ["JAZZ", "FADE", "DARE", "SEND", "MEAN", "EACH", "WISP", "INTO", "LIME", "TOLD", "CORN", "LOUD", "SONG", "HUNT", "TUNE", "COZY", "BOIL", "OHIO", "READ", "LURE", "ITCH", "DESK", "MOON", "RING", "OPEN", "OVER", "QUIT", "EXIT", "FAST", "SLOW", "BLUE", "COLD", "FOUR", "RICE", "COMB", "LIST", "BEST", "ZERO", "GOOD"]
+PoolE = ["SANDY", "TREND", "MIXED", "PORCH", "LUDUM", "CHAIR", "TEMPO", "IDAHO", "SOUTH", "MUSIC", "DANCE", "TREES", "IVORY", "OILED", "RUINS", "RHYME", "ARTSY", "DELAY", "ROYAL", "SHARK", "QUICK", "SMILE", "CHILD", "REACH", "HAPPY", "SUNNY", "TABLE", "SPEAK", "VOICE", "CROWN", "PANTS", "SHIRT"]
 PoolF = ["WANTED", "ISLAND", "MELODY", "ELEVEN", "PAINTS", "BISHOP", "THRONE", "MOMENT", "BURGER", "RHYTHM", "CARPET", "STUDIO", "CASTLE", "LOVELY", "CITRUS", "STRAWS"]
 PoolG = ["SNOW DAY", "POOL CUE", "DEAR GOD", "SEND OUT", "BUSY BEE", "TREE SAP", "FOOD DYE", "FIRE ANT", "KNEE CAP", "RACE CAR"]
 PoolH = ["CAR WASH", "RAT HOLE", "ZIP FILE", "BIG BANG", "FOR REAL", "BEE HIVE", "PET ROCK", "AIR HEAD", "SOY BEAN", "THE BOSS"]

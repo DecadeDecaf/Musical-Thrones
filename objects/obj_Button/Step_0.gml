@@ -31,6 +31,21 @@ if (point_distance(x, y, mouse_x, mouse_y) < 40) {
 		} else if (image_index == 6) {
 			image_index = 5
 			global.Endless = false
+		} else if (image_index == 7) {
+			with (obj_Control) {
+				DelayOffx = 0
+				var dialen = array_length(Dialog)
+				DialogPart = dialen - 1
+				Playing = true
+				with (obj_Button) {
+					if (image_index == 5 || image_index == 6 || image_index == 7) {
+						instance_destroy()
+					}
+				}
+				if (global.Endless) {
+					ThroneDistance = -15360
+				}
+			}
 		}
 	}
 } else {

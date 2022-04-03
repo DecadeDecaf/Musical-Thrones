@@ -432,9 +432,12 @@ if (Playing) {
 			audio_play_sound(snd_Fanfare, 1, false)
 		}
 	} else {
+		DelayOffx = 0
+		var dialen = array_length(Dialog)
+		DialogPart = dialen - 1
 		Playing = true
 		with (obj_Button) {
-			if (image_index == 5 || image_index == 6) {
+			if (image_index == 5 || image_index == 6 || image_index == 7) {
 				instance_destroy()
 			}
 		}
