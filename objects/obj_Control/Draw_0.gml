@@ -85,8 +85,10 @@ if (Section == 3) {
 	draw_set_alpha(1)
 	draw_text(960, 64, "Chorus (" + string(Subsection + 1) + "/6)")
 	draw_text_transformed(960, 128, "memorize the emblems", 0.7, 0.7, 0)
-	draw_sprite_ext(spr_Key, 3, 916, 224, 0.5, 0.5, 0, -1, 1)
-	draw_sprite_ext(spr_Key, 4, 1004, 224, 0.5, 0.5, 0, -1, 1)
+	if (instance_number(obj_EmblemGuess) > 0) {
+		draw_sprite_ext(spr_Key, 3, 916, 224, 0.5, 0.5, 0, -1, 1)
+		draw_sprite_ext(spr_Key, 4, 1004, 224, 0.5, 0.5, 0, -1, 1)
+	}
 } else {
 	draw_set_alpha(0.15)
 	draw_set_color($FFFFFF)
@@ -115,8 +117,10 @@ if (Section == 5) {
 	draw_set_alpha(1)
 	draw_text(960, 64, "Finale Chorus (" + string(Subsection + 1) + "/6)")
 	draw_text_transformed(960, 128, "memorize the emblems", 0.7, 0.7, 0)
-	draw_sprite_ext(spr_Key, 3, 916, 224, 0.5, 0.5, 0, -1, 1)
-	draw_sprite_ext(spr_Key, 4, 1004, 224, 0.5, 0.5, 0, -1, 1)
+	if (instance_number(obj_EmblemGuess) > 0) {
+		draw_sprite_ext(spr_Key, 3, 916, 224, 0.5, 0.5, 0, -1, 1)
+		draw_sprite_ext(spr_Key, 4, 1004, 224, 0.5, 0.5, 0, -1, 1)
+	}
 } else {
 	draw_set_alpha(0.15)
 	draw_set_color($FFFFFF)
