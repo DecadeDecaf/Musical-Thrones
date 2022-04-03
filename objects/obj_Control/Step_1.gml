@@ -36,6 +36,7 @@ if (Playing) {
 							} else if (!Out) {
 								switchsec = true
 								audio_stop_all()
+								Score += 1
 								var seclen = array_length(Song[@ Section])
 								var songlen = array_length(Song)
 								if (Subsection + 1 < seclen && !global.Fail) {
@@ -460,7 +461,7 @@ if (!Playing) {
 			audio_sound_pitch(snd_Voice, random_range(1.15, 1.35))
 			global.Voice = audio_play_sound(snd_Voice, 1, false)
 		}
-	} else {
+	} else if (Dialog[@ DialogPart][@ 0] == "Player") {
 		if (global.Voice != -1 && !audio_is_playing(global.Voice)) {
 			audio_sound_pitch(snd_Voice, random_range(0.8, 0.9))
 			global.Voice = audio_play_sound(snd_Voice, 1, false)

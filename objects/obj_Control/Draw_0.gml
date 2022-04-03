@@ -52,7 +52,11 @@ if (Playing && (Section == 0 || Section == 1)) {
 		subsec = 1
 	}
 	draw_text(960, 64, "Intro (" + string(subsec) + "/12)")
-	draw_text_transformed(960, 128, "type the words", 0.7, 0.7, 0)
+	if (Section == 0 && Subsection == 0) {
+		draw_text_transformed(960, 128, "get ready...", 0.7, 0.7, 0)
+	} else {
+		draw_text_transformed(960, 128, "type the words", 0.7, 0.7, 0)
+	}
 } else {
 	draw_set_alpha(0.15)
 	draw_set_color($FFFFFF)
@@ -132,6 +136,8 @@ if (Section == 6) {
 	draw_rectangle(1860, 10, 1910, 30, false)
 }
 
+draw_set_alpha(1)
+
 if (!Playing) {
 	draw_set_alpha(1)
 	draw_text(960, 64, Dialog[@ DialogPart][@ 0])
@@ -141,4 +147,9 @@ if (!Playing) {
 	}
 }
 
-draw_set_alpha(1)
+if ((Section > 0 || Subsection > 0) || Playing) {
+	var scr = max(1, Score)
+	draw_text_transformed(960, 176, "score: (" + string(scr) + "/36)", 0.5, 0.5, 0)
+}
+
+

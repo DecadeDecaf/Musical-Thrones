@@ -23,6 +23,8 @@ if (point_distance(x, y, mouse_x, mouse_y) < 40) {
 			global.Mute = false
 			image_index = 2
 			audio_master_gain(0.75)
+		} else if (image_index == 4) {
+			game_restart()
 		}
 	}
 } else {
