@@ -29,7 +29,7 @@ draw_sprite(spr_Pillars, 0, round(Offx) + 1920, 0)
 draw_sprite(spr_Window, 0, round(Offx) + 3840, 0)
 draw_sprite(spr_Pillars, 0, round(Offx) + 3840, 0)
 
-draw_sprite(spr_LeaderTempo, 0, round(Offx) + 3840, 0)
+draw_sprite(spr_LeaderTempo, 0, round(Offx) - ThroneDistance, 0)
 
 draw_set_alpha(Darken)
 draw_set_color($000000)
@@ -149,7 +149,7 @@ if (!Playing) {
 
 if ((Section > 0 || Subsection > 0) || Playing) {
 	var scr = max(1, Score)
-	draw_text_transformed(960, 176, "score: (" + string(scr) + "/36)", 0.5, 0.5, 0)
+	draw_text_transformed(960, 1020, "score: (" + string(scr) + "/36)", 0.5, 0.5, 0)
 }
 
 

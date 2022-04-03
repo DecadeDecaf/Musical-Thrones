@@ -50,7 +50,7 @@ Pattern = []
 Emblem = 0
 Ask = 0
 
-ThroneDistance = 3840
+ThroneDistance = -3840
 Playing = false
 Out = false
 Darken = 0.25
@@ -59,5 +59,6 @@ audio_sound_pitch(snd_Voice, random_range(1.15, 1.35))
 global.Voice = audio_play_sound(snd_Voice, 1, false)
 
 Frame = 0
+global.Endless = false
 
 depth = 2

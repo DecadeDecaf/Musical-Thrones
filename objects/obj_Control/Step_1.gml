@@ -433,6 +433,14 @@ if (Playing) {
 		}
 	} else {
 		Playing = true
+		with (obj_Button) {
+			if (image_index == 5 || image_index == 6) {
+				instance_destroy()
+			}
+		}
+		if (global.Endless) {
+			ThroneDistance = -15360
+		}
 	}
 } else if (!Playing && keyboard_check_pressed(vk_space)) {
 	var dialen = array_length(Dialog)
@@ -443,7 +451,7 @@ if (Playing) {
 		if (Dialog[@ DialogPart][@ 0] == "Ruler Tempo") {
 			audio_sound_pitch(snd_Voice, random_range(1.15, 1.35))
 			global.Voice = audio_play_sound(snd_Voice, 1, false)
-			DelayOffx = -3840
+			DelayOffx = ThroneDistance
 		} else if (Dialog[@ DialogPart][@ 0] == "Player") {
 			audio_sound_pitch(snd_Voice, random_range(0.8, 0.9))
 			global.Voice = audio_play_sound(snd_Voice, 1, false)
@@ -569,13 +577,13 @@ if (Offx != DelayOffx) {
 	}
 }
 
-if (Playing && ThroneDistance + Offx <= 0) {
+if (Playing && -ThroneDistance + Offx <= 0) {
 	audio_stop_all()
 	Playing = false
 	Section = 7
 	Dialog = [["Ruler Tempo", "wow, color me impressed!"], ["Ruler Tempo", "i guess it's time for me to retire"], ["Player", "cool thanks"], ["You Win", ""]]
 	DialogPart = 0
-	PlayOffx = -3840
+	PlayOffx = ThroneDistance
 	with (obj_Shield) {
 		Fade = true
 	}

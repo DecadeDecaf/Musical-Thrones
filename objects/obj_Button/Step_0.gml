@@ -25,6 +25,12 @@ if (point_distance(x, y, mouse_x, mouse_y) < 40) {
 			audio_master_gain(0.75)
 		} else if (image_index == 4) {
 			game_restart()
+		} else if (image_index == 5) {
+			image_index = 6
+			global.Endless = true
+		} else if (image_index == 6) {
+			image_index = 5
+			global.Endless = false
 		}
 	}
 } else {
