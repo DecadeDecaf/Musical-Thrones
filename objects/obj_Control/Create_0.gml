@@ -22,7 +22,7 @@ Chorus = [snd_4a, snd_4b, snd_4c, snd_4d, snd_4e, snd_4f]
 Outro = [snd_5a]
 Song = [Intro, Opening, VerseA, Chorus, VerseB, Chorus, Outro]
 
-Score = 0
+Score = -1
 
 Dialog = [["Ruler Tempo", "who goes there?!"], ["Player", "'tis i, unnamed player character"], ["Ruler Tempo", "why i oughta send my whole army after you!"], ["Player", "that won't be necessary, your majesty"], ["Ruler Tempo", "oh?"], ["Player", "that's right"], ["Player", "i've come to challenge the title of gender-neutral sovereign over this land"], ["Ruler Tempo", "very well..."], ["Ruler Tempo", "as per tradition, i pick the game"], ["Ruler Tempo", "...musical chairs!!"], ["Player", "but you are sitting on the only chair!"], ["Player", "this isn't fair, my liege"], ["Ruler Tempo", "reach my throne before the song ends"], ["Ruler Tempo", "impress me, and i might just delay the inevitable outro"], ["Ruler Tempo", "also 'my liege' doesn't feel gender-neutral to me"], ["Ruler Tempo", "it has masculine roots"], ["Player", "terribly sorry, o esteemed ruler tempo"], ["Ruler Tempo", "it's ok"], ["Ruler Tempo", "good luck!"], ["Player", "it's on"]]
 DialogPart = 0

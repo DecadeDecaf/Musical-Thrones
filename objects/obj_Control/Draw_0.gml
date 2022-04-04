@@ -152,7 +152,7 @@ if (!Playing) {
 }
 
 if ((Section > 0 || Subsection > 0) || Playing) {
-	var scr = max(1, Score)
+	var scr = max(0, Score)
 	draw_text_transformed(960, 1020, "score: (" + string(scr) + "/36)", 0.5, 0.5, 0)
 }
 
